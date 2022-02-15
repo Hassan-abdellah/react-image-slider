@@ -1,7 +1,6 @@
 # This Project Is Made With ❤️ Using React JS
-___
 
-[Live Demo](https://image-slider-netlify.app)
+[Live Demo](https://images-slider.netlify.app/)
 
 ## Available Scripts
 
