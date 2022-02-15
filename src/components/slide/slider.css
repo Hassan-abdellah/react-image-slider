@@ -1,0 +1,36 @@
+.slider{
+    /* max-height:100vh; */
+    height: 100%;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:1rem;
+    user-select:none;
+  }
+  .slider img{
+    max-width: 100%;
+    max-height:60%;
+    max-height:40%;
+    transition:transform 0.3s ease-in-out;
+  }
+  .slider h2{
+    font-size:2.5rem;
+    margin-bottom:0.5rem;
+  }
+  .slider h4{
+    font-size:1.3rem;
+  }
+  .btn{
+    /* background-color:#444; */
+    background-color: var(--dark-gray);
+    color:#fff;
+    border:0;
+    padding:1rem 1.5rem;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  

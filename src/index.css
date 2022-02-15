@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+:root{
+  --dark-gray:#767676;
+}
+.app{
+  font-family:'Open Sans' , sans-serif;
+  height:100vh;
+  overflow:hidden;
+  background-color:#333;
+  color:#fff;
+  line-height:1.7;
+}
+.slider-container{
+    height:100%;
+    width: 100%;
+    overflow:hidden;
+    cursor:grab;
+    position: relative;
+}
+.wrapper{
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+.grabbing{
+  cursor:grabbing;
+}
+.grabbing .slider img{
+  transform:scale(.9);
+}
+.prev-btn,
+.next-btn{
+  position: absolute;
+  position: fixed;
+  top:50%;
+  border: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prev-btn{
+  left:10px;
+  left:50px;
+}
+.next-btn{
+  right:10px;
+  right:50px;
+}
+.prev-btn img,
+.next-btn img{
+  width: 10px;
+  height: 10px;
+}
+.dots-container{
+  position:absolute;
+  z-index: 100;
+  bottom:2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot::after{
+  content: "";
+  width:13px;
+  height: 13px;
+  border-radius: 50%;
+  /* background-color: #333; */
+  background-color: var(--dark-gray);
+  transform-origin: center;
+  transform: scale(0);
+  transition: transform 0.4s ease-in-out;
+}
+.dot.active::after{
+  transform: scale(1);
+}
+@media screen and (max-width:450px) {
+  .prev-btn{
+    left:10px;
+  }
+  .next-btn{
+    right:10px;
+  }
+}
