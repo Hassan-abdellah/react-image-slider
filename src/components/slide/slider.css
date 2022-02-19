@@ -23,7 +23,6 @@
     font-size:1.3rem;
   }
   .btn{
-    /* background-color:#444; */
     background-color: var(--dark-gray);
     color:#fff;
     border:0;

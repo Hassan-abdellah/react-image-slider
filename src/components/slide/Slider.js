@@ -7,9 +7,10 @@ const Slider = ({image, touchStart, touchEnd, touchMove, index}) => {
         onTouchMove={(e) => touchMove(e)}
         onTouchEnd={() => touchEnd()}
         // onMouseDown={(e) => {touchStart(e,index)}} 
+        // onMouseMove={(e) => touchMove(e)}   
         // onMouseUp={() => touchEnd()} 
         // onMouseLeave={() => touchEnd()} 
-        // onMouseMove={(e) => touchMove(e)}   
+        onContextMenu={(e) => e.preventDefault()}
         >
       <h2>{image.title}</h2>
       <h4>{image.price}</h4>

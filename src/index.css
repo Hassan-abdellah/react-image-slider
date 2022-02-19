@@ -11,7 +11,7 @@
 .app{
   font-family:'Open Sans' , sans-serif;
   height:100vh;
-  overflow:hidden;
+  overflow-x:hidden;
   background-color:#333;
   color:#fff;
   line-height:1.7;
@@ -19,15 +19,15 @@
 .slider-container{
     height:100%;
     width: 100%;
-    overflow:hidden;
+    overflow-x:hidden;
     cursor:grab;
     position: relative;
 }
 .wrapper{
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.3s ease-out;
 }
 .grabbing{
   cursor:grabbing;
